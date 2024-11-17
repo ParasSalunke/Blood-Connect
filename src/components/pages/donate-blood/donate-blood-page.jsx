@@ -8,6 +8,7 @@ import FormComponent from "../../sections/form/form-component";
 import HeaderComponent from "../../sections/header/header-component";
 import BeforeFooterCTA from "../../sections/before-footer-cta/before-footer-cta-components";
 import FooterComponent from "../../sections/footer/footer-component";
+import EligibilityChecker from "../../sections/eligibility-checker/EligibilityChecker";
 
 const DonateBloodPage = () => {
 	const [formData, setFormData] = useState({
@@ -211,6 +212,7 @@ const DonateBloodPage = () => {
 				formData={formData}
 				setFormData={setFormData}
 			/>
+			<EligibilityChecker />
 			<ThreeStepProcessComponent
 				stepsText={DonateBloodPageDetails.stepsText}
 				stepDetails={stepDetails}
