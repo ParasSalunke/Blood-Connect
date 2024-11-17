@@ -23,8 +23,10 @@ const FormComponent = ({
     try {
       const response = await fetch('https://api.web3forms.com/submit', {
         method: 'POST',
+        mode: 'cors',
         headers: {
           'Content-Type': 'application/json',
+          Accept: "application/json"
         },
         body: JSON.stringify({
           access_key: apiKey,

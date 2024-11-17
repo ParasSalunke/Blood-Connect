@@ -31,8 +31,10 @@ const HostBloodDrivePage = () => {
 			// Web3Forms submission
 			const web3Response = await fetch('https://api.web3forms.com/submit', {
 				method: 'POST',
+				mode: 'cors',
 				headers: {
 					'Content-Type': 'application/json',
+					Accept: "application/json"
 				},
 				body: JSON.stringify({
 					access_key: apiKey,
