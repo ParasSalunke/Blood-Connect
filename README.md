@@ -1,58 +1,42 @@
-# HemoCell Blood Bank Website
+# BloodConnect - Blood Bank Management System
 
-HemoCell is a web application built with ReactJS, Node.js, MySQL, and Tailwind CSS. It is designed to facilitate blood donations, requests, and blood drives, as well as donations for the organization.
+## Overview
 
-## Mockup
+ BloodConnect is a comprehensive blood bank management system built to streamline blood donation processes and connect donors with recipients efficiently. The platform facilitates blood donations, requests, and blood drive organization through a user-friendly interface.
 
-https://github.com/moazamdev/alter-ui/assets/89134865/5b5d4561-260b-440d-9d9f-adde3ed9f6aa
+## 🚀 Features
 
-## Table of Contents
+- **Blood Donation Management**
+  - Schedule donation appointments
+  - Track donation history
+  - Manage donor profiles
 
-- [Features](#features)
-- [Tech Stack](#tech-stack)
-- [Solutions](#solutions)
-- [Developer](#developer)
-- [Instructions to Run](#instructions-to-run)
-- [Admin Dashboard](#admin-dashboard)
+- **Blood Request System**
+  - Emergency blood requests
+  - Blood type matching
+  - Request tracking
 
-## Features
+- **Blood Drive Organization**
+  - Create and manage blood drives
+  - Event scheduling
+  - Location management
 
-HemoCell provides the following features:
+- **Admin Dashboard**
+  - User management
+  - Donation analytics
+  - Request monitoring
 
-- Blood donations
-- Requesting blood
-- Hosting blood drives
-- Donating money
+## 💻 Tech Stack
 
-## Tech Stack
+- **Frontend**
+  - React.js
+  - Tailwind CSS
+  - Firebase Authentication
 
-HemoCell uses the following technologies:
+- **Backend**
+  - Node.js
+  - Express.js
+  - Firebase Firestore
 
-- ReactJS: A JavaScript library for building user interfaces
-- Node.js: A JavaScript runtime built on Chrome's V8 JavaScript engine
-- MySQL: An open-source relational database management system
-- Tailwind CSS: A utility-first CSS framework
-
-## Solutions
-
-HemoCell addresses the following solutions:
-
-- Facilitating blood donations and requests
-- Encouraging blood drives and donations
-- Providing an easy-to-use platform for managing blood-related activities
-
-## Developer
-
-HemoCell was developed by [Moazam Ali](https://www.linkedin.com/in/moazamdev/), a software engineer with experience in web development.
-
-## Instructions to Run
-
-To run HemoCell locally, follow these steps:
-
-1. Clone the repository: `git clone https://github.com/moazamdev/hemocell.git`
-2. Install dependencies: `npm install`
-3. Start the server: `npm start` or `npm run dev`
-
-## Admin Dashboard
-
-HemoCell provides an admin dashboard for managing users. To access the dashboard, log in as an admin and navigate to `/dashboard`. From there, you can manage users and view analytics.
+- **Database**
+  - Firebase Realtime Database
