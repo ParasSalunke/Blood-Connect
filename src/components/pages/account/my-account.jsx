@@ -23,6 +23,17 @@ const MyAccount = () => {
     "None"
   ];
 
+  const bloodGroups = [
+    { value: 'A+', label: 'A+' },
+    { value: 'A-', label: 'A-' },
+    { value: 'B+', label: 'B+' },
+    { value: 'B-', label: 'B-' },
+    { value: 'O+', label: 'O+' },
+    { value: 'O-', label: 'O-' },
+    { value: 'AB+', label: 'AB+' },
+    { value: 'AB-', label: 'AB-' }
+  ];
+
   const stateDistricts = {
     "Andhra Pradesh": [
       "Anantapur", "Chittoor", "East Godavari", "Guntur", "Krishna", "Kurnool",
@@ -248,7 +259,12 @@ const MyAccount = () => {
                   </div>
 
                   {[
-                    { name: 'bloodGroup', label: 'Blood Group', type: 'text' },
+                    {
+                      name: 'bloodGroup',
+                      label: 'Blood Group',
+                      type: 'select',
+                      options: bloodGroups
+                    },
                     { name: 'age', label: 'Age', type: 'number' },
                     { name: 'weight', label: 'Weight (kg)', type: 'number' },
                     {

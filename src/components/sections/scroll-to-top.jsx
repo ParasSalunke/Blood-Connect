@@ -37,20 +37,32 @@ const ScrollToTopButton = () => {
 						position: "fixed",
 						right: "20px",
 						bottom: "20px",
-						height: "40px",
-						width: "40px",
+						height: "45px",
+						width: "45px",
 						fontSize: "24px",
 						borderRadius: "50%",
-						border: "none",
-						backgroundColor: "#000",
-						color: "#fff",
+						border: "1px solid #400606",
+						backgroundColor: "#260303",
+						color: "#F2F2F2",
 						cursor: "pointer",
-						opacity: "0.7",
-						transition: "opacity 0.3s",
-						zIndex: "999"
+						opacity: "0.9",
+						transition: "all 0.3s ease",
+						zIndex: "999",
+						display: "flex",
+						alignItems: "center",
+						justifyContent: "center",
+						boxShadow: "0 2px 8px rgba(0,0,0,0.2)"
 					}}
-					onMouseEnter={(e) => (e.target.style.opacity = "1")}
-					onMouseLeave={(e) => (e.target.style.opacity = "0.7")}
+					onMouseEnter={(e) => {
+						e.target.style.backgroundColor = "#400606";
+						e.target.style.transform = "translateY(-2px)";
+						e.target.style.boxShadow = "0 4px 12px rgba(0,0,0,0.3)";
+					}}
+					onMouseLeave={(e) => {
+						e.target.style.backgroundColor = "#260303";
+						e.target.style.transform = "translateY(0)";
+						e.target.style.boxShadow = "0 2px 8px rgba(0,0,0,0.2)";
+					}}
 				>
 					↑
 				</button>
