@@ -18,7 +18,7 @@ const FormComponent = ({
     e.preventDefault();
     setStatus("Submitting...");
 
-    const apiKey = import.meta.env.VITE_WEB3FORMS_KEY;
+    const apiKey = import.meta.env.VITE_ACCESS_KEY;
 
     try {
       const response = await fetch('https://api.web3forms.com/submit', {

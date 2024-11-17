@@ -25,7 +25,7 @@ const HostBloodDrivePage = () => {
 	const handleSubmit = async (e) => {
 		e.preventDefault();
 
-		const apiKey = import.meta.env.VITE_WEB3FORMS_KEY;
+		const apiKey = import.meta.env.VITE_ACCESS_KEY;
 
 		try {
 			// Web3Forms submission
