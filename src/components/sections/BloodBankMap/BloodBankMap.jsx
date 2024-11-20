@@ -46,12 +46,12 @@ const BloodBankMap = () => {
         />
       </div>
 
-      {/* Map container */}
-      <div className="h-[70vh] w-full rounded-xl overflow-hidden shadow-lg">
+      {/* Map container with higher z-index */}
+      <div className="h-[70vh] w-full rounded-xl overflow-hidden shadow-lg relative">
         <MapContainer
           center={defaultCenter}
           zoom={defaultZoom}
-          style={{ height: "100%", width: "100%" }}
+          style={{ height: "100%", width: "100%", zIndex: 1 }}
           maxBounds={[
             [6.4626999, 68.1766451],  // Southwest
             [35.6745457, 97.395561]    // Northeast
@@ -59,7 +59,6 @@ const BloodBankMap = () => {
         >
           <TileLayer
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-            attribution='&copy; OpenStreetMap contributors'
           />
           {filteredBloodBanks.map(bank => (
             <Marker
