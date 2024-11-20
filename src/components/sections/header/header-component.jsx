@@ -10,6 +10,7 @@ const navigation = [
 	{ name: "Contact", href: "/contact" },
 	{ name: "Need Blood", href: "/need-blood", isHighlighted: true },
 	{ name: "Donate Blood", href: "/donate-blood", isHighlighted: true },
+	{ name: "Blood Bank", href: "/blood-bank", isHighlighted: true },
 	{ name: "My Account", href: "/my-account", isHighlighted: true },
 ];
 

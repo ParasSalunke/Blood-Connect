@@ -16,6 +16,7 @@ import AdminDonateBlood from "../src/components/views/admin/admin-donate-blood";
 import AdminNeedBlood from "../src/components/views/admin/admin-need-blood";
 import AdminHostBloodDrive from "../src/components/views/admin/admin-host-blood-drive";
 import AdminNeedHelp from "../src/components/views/admin/admin-need-help";
+import BloodBankMap from "./components/sections/BloodBankMap/BloodBankMap";
 
 // Protected Route Component
 const ProtectedRoute = ({ children }) => {
@@ -93,6 +94,14 @@ export default function App() {
         }
       />
       <Route
+        path="/blood-bank"
+        element={
+          <ProtectedRoute>
+            <BloodBankMap />
+          </ProtectedRoute>
+        }
+      />
+      <Route
         path="/contact"
         element={
           <ProtectedRoute>
@@ -115,6 +124,7 @@ export default function App() {
         <Route path="need-blood" element={<AdminNeedBlood />} />
         <Route path="host-blood-drive" element={<AdminHostBloodDrive />} />
         <Route path="need-help" element={<AdminNeedHelp />} />
+        <Route path="blood-banks" element={<BloodBankMap />} />
       </Route>
 
       {/* Catch all redirect */}

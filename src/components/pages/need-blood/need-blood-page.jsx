@@ -8,6 +8,7 @@ import SearchBloodStockComponent from "../../sections/search-blood-stock/search-
 import HeaderComponent from "../../sections/header/header-component";
 import BeforeFooterCTA from "../../sections/before-footer-cta/before-footer-cta-components";
 import FooterComponent from "../../sections/footer/footer-component";
+import BloodBankMap from "../../sections/BloodBankMap/BloodBankMap";
 
 const NeedBloodPage = () => {
 	const [formData, setFormData] = useState({
@@ -204,6 +205,7 @@ const NeedBloodPage = () => {
 				setFormData={setFormData}
 				isAuthenticated={isAuthenticated}
 			/>
+			<BloodBankMap />
 			<QuoteComponent {...NeedBloodPageDetails.quote} />
 			<SearchBloodStockComponent {...NeedBloodPageDetails.bloodStock} />
 			<ThreeStepProcessComponent

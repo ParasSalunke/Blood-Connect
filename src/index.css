@@ -16,7 +16,11 @@
 	--md_br: 8px;
 	--sm_br: 4px;
 }
-
+.leaflet-container {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
 hr
 {
   color: #c2c2c2;
